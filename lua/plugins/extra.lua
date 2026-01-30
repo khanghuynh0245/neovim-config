@@ -336,7 +336,7 @@ return {
         opts = {
             testcases_use_single_file = true,
             runner_ui = {
-                -- interface = 'split',
+                interface = 'split',
             }
         }
     },
@@ -371,7 +371,7 @@ return {
     },
     {
         'sphamba/smear-cursor.nvim',
-        enabled = true,
+        enabled = false,
         lazy = false,
         opts = {
             smear_between_buffers = true,
@@ -587,5 +587,15 @@ return {
             }
         end,
     },
-    { 'ravibrock/spellwarn.nvim', event = 'VeryLazy', opts = {} }
+    { 'ravibrock/spellwarn.nvim', event = 'VeryLazy', opts = {} },
+    {
+        'sahaj-b/brainrot.nvim',
+        event = 'VeryLazy',
+        enabled = false,
+        opts = {
+            image_enabled = false,
+            block_input = false,
+            dim_level = 0,
+        },
+    }
 }
